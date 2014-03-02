@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A6158CA18BFB731007877CD /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6158C918BFB731007877CD /* point.png */; };
 		5A89E93F18B9E798003A70FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A89E93E18B9E798003A70FF /* Foundation.framework */; };
 		5A89E94118B9E798003A70FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A89E94018B9E798003A70FF /* CoreGraphics.framework */; };
 		5A89E94318B9E798003A70FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A89E94218B9E798003A70FF /* UIKit.framework */; };
@@ -21,6 +22,13 @@
 		5A89E96018B9E798003A70FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A89E94218B9E798003A70FF /* UIKit.framework */; };
 		5A89E96818B9E798003A70FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A89E96618B9E798003A70FF /* InfoPlist.strings */; };
 		5A89E96A18B9E798003A70FF /* ios_uzdevumsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A89E96918B9E798003A70FF /* ios_uzdevumsTests.m */; };
+		5AE3DC5E18BB47FF00407DAA /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3DC5D18BB47FF00407DAA /* API.m */; };
+		5AE3DC6318BB807500407DAA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE3DC6218BB807500407DAA /* MapKit.framework */; };
+		5AE3DC6518BB807A00407DAA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE3DC6418BB807A00407DAA /* CoreLocation.framework */; };
+		5AE3DC6818BC895400407DAA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3DC6718BC895400407DAA /* User.m */; };
+		5AE3DC9718BE039100407DAA /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3DC9618BE039100407DAA /* MapAnnotation.m */; };
+		5AE3DCA118BE30D700407DAA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE3DCA018BE30D700407DAA /* SystemConfiguration.framework */; };
+		5AE3DCA518BE32B000407DAA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3DCA418BE32B000407DAA /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A6158C918BFB731007877CD /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
 		5A89E93B18B9E798003A70FF /* ios_uzdevums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_uzdevums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A89E93E18B9E798003A70FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A89E94018B9E798003A70FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +62,17 @@
 		5A89E96518B9E798003A70FF /* ios_uzdevumsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios_uzdevumsTests-Info.plist"; sourceTree = "<group>"; };
 		5A89E96718B9E798003A70FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A89E96918B9E798003A70FF /* ios_uzdevumsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_uzdevumsTests.m; sourceTree = "<group>"; };
+		5AE3DC5C18BB47FF00407DAA /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		5AE3DC5D18BB47FF00407DAA /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
+		5AE3DC6218BB807500407DAA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5AE3DC6418BB807A00407DAA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5AE3DC6618BC895400407DAA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		5AE3DC6718BC895400407DAA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		5AE3DC9518BE039100407DAA /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		5AE3DC9618BE039100407DAA /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		5AE3DCA018BE30D700407DAA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5AE3DCA318BE32B000407DAA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5AE3DCA418BE32B000407DAA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE3DCA118BE30D700407DAA /* SystemConfiguration.framework in Frameworks */,
+				5AE3DC6518BB807A00407DAA /* CoreLocation.framework in Frameworks */,
+				5AE3DC6318BB807500407DAA /* MapKit.framework in Frameworks */,
 				5A89E94118B9E798003A70FF /* CoreGraphics.framework in Frameworks */,
 				5A89E94318B9E798003A70FF /* UIKit.framework in Frameworks */,
 				5A89E93F18B9E798003A70FF /* Foundation.framework in Frameworks */,
@@ -101,6 +124,9 @@
 		5A89E93D18B9E798003A70FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5AE3DCA018BE30D700407DAA /* SystemConfiguration.framework */,
+				5AE3DC6418BB807A00407DAA /* CoreLocation.framework */,
+				5AE3DC6218BB807500407DAA /* MapKit.framework */,
 				5A89E93E18B9E798003A70FF /* Foundation.framework */,
 				5A89E94018B9E798003A70FF /* CoreGraphics.framework */,
 				5A89E94218B9E798003A70FF /* UIKit.framework */,
@@ -114,9 +140,13 @@
 			children = (
 				5A89E94D18B9E798003A70FF /* AppDelegate.h */,
 				5A89E94E18B9E798003A70FF /* AppDelegate.m */,
+				5AE3DC5C18BB47FF00407DAA /* API.h */,
+				5AE3DC5D18BB47FF00407DAA /* API.m */,
+				5AE3DCA218BE329A00407DAA /* Reachability */,
+				5AE3DC5F18BB480F00407DAA /* Model */,
 				5A89E95018B9E798003A70FF /* Main.storyboard */,
-				5A89E95318B9E798003A70FF /* ViewController.h */,
-				5A89E95418B9E798003A70FF /* ViewController.m */,
+				5AE3DC6118BB482B00407DAA /* Controller */,
+				5AE3DC6018BB481600407DAA /* View */,
 				5A89E95618B9E798003A70FF /* Images.xcassets */,
 				5A89E94518B9E798003A70FF /* Supporting Files */,
 			);
@@ -127,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				5A89E94618B9E798003A70FF /* ios_uzdevums-Info.plist */,
+				5A6158C918BFB731007877CD /* point.png */,
 				5A89E94718B9E798003A70FF /* InfoPlist.strings */,
 				5A89E94A18B9E798003A70FF /* main.m */,
 				5A89E94C18B9E798003A70FF /* ios_uzdevums-Prefix.pch */,
@@ -150,6 +181,42 @@
 				5A89E96618B9E798003A70FF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AE3DC5F18BB480F00407DAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5AE3DC6618BC895400407DAA /* User.h */,
+				5AE3DC6718BC895400407DAA /* User.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5AE3DC6018BB481600407DAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5AE3DC9518BE039100407DAA /* MapAnnotation.h */,
+				5AE3DC9618BE039100407DAA /* MapAnnotation.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5AE3DC6118BB482B00407DAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5A89E95418B9E798003A70FF /* ViewController.m */,
+				5A89E95318B9E798003A70FF /* ViewController.h */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5AE3DCA218BE329A00407DAA /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				5AE3DCA318BE32B000407DAA /* Reachability.h */,
+				5AE3DCA418BE32B000407DAA /* Reachability.m */,
+			);
+			name = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +297,7 @@
 			files = (
 				5A89E95718B9E798003A70FF /* Images.xcassets in Resources */,
 				5A89E94918B9E798003A70FF /* InfoPlist.strings in Resources */,
+				5A6158CA18BFB731007877CD /* point.png in Resources */,
 				5A89E95218B9E798003A70FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,9 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE3DC6818BC895400407DAA /* User.m in Sources */,
 				5A89E95518B9E798003A70FF /* ViewController.m in Sources */,
 				5A89E94F18B9E798003A70FF /* AppDelegate.m in Sources */,
+				5AE3DCA518BE32B000407DAA /* Reachability.m in Sources */,
+				5AE3DC5E18BB47FF00407DAA /* API.m in Sources */,
 				5A89E94B18B9E798003A70FF /* main.m in Sources */,
+				5AE3DC9718BE039100407DAA /* MapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +532,7 @@
 				5A89E96F18B9E798003A70FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A89E97018B9E798003A70FF /* Build configuration list for PBXNativeTarget "ios_uzdevumsTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +541,7 @@
 				5A89E97218B9E798003A70FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

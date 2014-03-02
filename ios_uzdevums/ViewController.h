@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <MapKit/MapKit.h>
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (nonatomic, strong) NSMutableDictionary *annotations;
 
+-(void) updatePlacemark:(NSNotification *)notification;
+-(void) addPlacemark:(NSNotification *)notification;
+-(void)refreshAnnotation:(NSNotification *)notification;
 @end
