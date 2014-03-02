@@ -12,6 +12,7 @@
 
 @interface API : NSObject <NSStreamDelegate,NSURLSessionDelegate>
 +(API *)sharedInstance;
+-(void)authorizeUser:(NSString *)email;
 -(void)addUser:(NSString *)info;
 -(void)reachabilityChanged:(NSNotification*)note;
 -(void)saveImage:(UIImage*)image withName:(NSString*)name;

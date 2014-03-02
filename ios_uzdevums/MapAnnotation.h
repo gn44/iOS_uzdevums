@@ -27,7 +27,6 @@
 @property (nonatomic)CLLocationCoordinate2D coordinate;
 @property CLLocationCoordinate2D newCoord;
 @property CLLocationCoordinate2D oldCoord;
-
 - (id)initWithCoordinate:(CLLocationCoordinate2D)coordinate andTitle:(NSString*)t;
 -(void)setCoordinate:(CLLocationCoordinate2D)newCoordinate;
 -(CLLocationCoordinate2D)lerpFrom:(CLLocationCoordinate2D)fromCoordinate to:(CLLocationCoordinate2D)toCoordinate;

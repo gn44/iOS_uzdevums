@@ -52,10 +52,10 @@
 
 -(void)refreshAnnotation:(NSNotification *)notification
 {
-    NSDictionary *info = [notification userInfo];
-    MapAnnotation *annotation = (MapAnnotation*)[info objectForKey:@"User"];
-    [_mapView deselectAnnotation:annotation animated:NO];
-    [_mapView selectAnnotation:annotation animated:YES];
+        NSDictionary *info = [notification userInfo];
+        MapAnnotation *annotation = (MapAnnotation*)[info objectForKey:@"User"];
+        [_mapView deselectAnnotation:annotation animated:NO];
+        [_mapView selectAnnotation:annotation animated:NO];
 }
 -(void) addPlacemark:(NSNotification *)notification
 {
@@ -69,12 +69,7 @@
     [_mapView addAnnotation:annotation];
     [_annotations setObject:annotation forKey:(NSString*)user.ID];
 }
-- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views{
-    MKAnnotationView *annotationView = [views objectAtIndex:0];
-    id<MKAnnotation> mp = [annotationView annotation];
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([mp coordinate], 300, 300);
-    [_mapView setRegion:region animated:YES];
-}
+
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation{
     static NSString *AnnotationIdentifier = @"AnnotationIdentifier";
     MKAnnotationView *AnnotationView =
@@ -109,6 +104,8 @@
     {
         MapAnnotation *annotation = (MapAnnotation*)view.annotation;
         annotation.selected = YES;
+        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(annotation.coordinate, 300, 300);
+        [_mapView setRegion:region animated:YES];
     }
 }
 - (void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view

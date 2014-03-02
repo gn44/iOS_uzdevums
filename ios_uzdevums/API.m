@@ -194,16 +194,12 @@
     Reachability * reach = [note object];
     if([reach isReachable])
     {
-        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-        NSLog(@"usable");
         [self authorizeUser:kEmail];
     }
     else
     {
-        NSLog(@"unusable");
         UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Ups" message:@"Network connection has been lost" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertView show];
-        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     }
 }
 @end

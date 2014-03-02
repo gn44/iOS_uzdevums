@@ -44,10 +44,11 @@
 -(void)setCoordinate:(CLLocationCoordinate2D)newCoordinate
 {
     _newCoord = newCoordinate;
-    if(frames!=0.3 && _selected)
+    if(_selected)
     {
+        frames = 0.15;
         [_timer invalidate];
-        _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(lerpCoordinate) userInfo:nil repeats:YES];
+        _timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(lerpCoordinate) userInfo:nil repeats:YES];
     }else
         if(!_selected)
         {
@@ -61,9 +62,9 @@
 {
     _coordinate = [self lerpFrom:_oldCoord to:_newCoord];
      [self setAdress:_coordinate];
-    if(frames>=1)
+    if(frames>=0.5)
     {
-        frames = 0.3;
+        frames = 0.15;
         [_timer invalidate];
         _coordinate = _newCoord;
         _oldCoord = _coordinate;
@@ -74,7 +75,7 @@
     CLLocationCoordinate2D currentCoordinate;
     currentCoordinate.latitude = _oldCoord.latitude +(_newCoord.latitude - _oldCoord.latitude) *frames;
     currentCoordinate.longitude = _oldCoord.longitude +(_newCoord.longitude - _oldCoord.longitude) *frames;
-    frames+=0.3;
+    frames+=0.02;
     _oldCoord = currentCoordinate;
     return currentCoordinate;
 }
@@ -90,16 +91,15 @@
             if(adress[0]==NULL)
             {
                 _subtitle = placemark.thoroughfare;
-
             } else
-            _subtitle = [NSString stringWithFormat:@"%@ %@",placemark.thoroughfare,adress[0]];
-            if(_selected)
-            {
-                 NSDictionary *userToRefresh = [NSDictionary dictionaryWithObject:self forKey:@"User"];
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshUser" object:self userInfo:userToRefresh];
-            }
+                _subtitle = [NSString stringWithFormat:@"%@ %@",placemark.thoroughfare,adress[0]];
         }
     }];
+    if(_selected)
+    {
+        NSDictionary *userToRefresh = [NSDictionary dictionaryWithObject:self forKey:@"User"];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshUser" object:self userInfo:userToRefresh];
+    }
 }
 -(BOOL)isSelected
 {
